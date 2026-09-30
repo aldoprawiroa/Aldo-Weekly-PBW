@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEWS</title>
-</head>
-<body>
-    <h1>NEWS PAGE</h1>
-</body>
-</html>
+@extends('layouts.main')
+
+@section('content')
+<h1>NEWS PAGE</h1>
+<h2>Berita Terkini</h2>
+<ul>
+    <li>Berita 1</li>
+    <li>Berita 2</li>
+    <li>Berita 3</li>
+</ul>
+@endsection
