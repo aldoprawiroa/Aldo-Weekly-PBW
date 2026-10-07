@@ -1,11 +1,14 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>NEWS PAGE</h1>
-<h2>Berita Terkini</h2>
-<ul>
-    <li>Berita 1</li>
-    <li>Berita 2</li>
-    <li>Berita 3</li>
-</ul>
+
+<h1 class="text-center">{{ $title }}</h1>
+
+@foreach ($news as $item)
+<h2><a href="news/{{ $item['slug'] }}">{{ $item['judul'] }}</a></h2>
+<p>Penulis: {{ $item['penulis'] }}</p>
+<p>{{ $item['konten'] }}</p>
+<hr>
+@endforeach
+
 @endsection
