@@ -12,7 +12,7 @@
                             href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{($title === 'News') ? 'active' : ''}}" href="/news">News</a>
+                        <a class="nav-link {{($title === 'Berita') ? 'active' : ''}}" href="{{ route('berita.index') }}">Berita</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{($title === 'Profile') ? 'active' : ''}}" href="/profile">Profile</a>
